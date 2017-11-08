@@ -19,6 +19,7 @@ Vagrant.configure("2") do |config|
 		  		add-apt-repository ppa:gluster/glusterfs-3.8
 		  		apt-get update
 		  		apt-get install -y glusterfs-server
+		  		mkdir -p /gluster/gvol0
 	  		SHELL
 		end
 	end
