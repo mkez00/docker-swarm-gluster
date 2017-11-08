@@ -12,6 +12,6 @@ Demonstrates provisioning a Docker Swarm cluster with 3 manager nodes and HA vol
 # Test
 
 1) Go to `http://192.168.56.90:3000` or `http://192.168.56.91:3000` or `http://192.168.56.92:3000`
-2) Create a Prometheus datasource in Grafana using URL: `http://172.17.0.1:9090` (`172.17.0.1` is the docker0 interface on each node in the swarm)
+2) Create a Prometheus datasource in Grafana using URL: `http://172.17.0.1:9090` (`172.17.0.1` is the `docker0` interface on each node in the swarm)
 3) From host machine execute: `vagrant halt manager1`
 4) Go to: `http://192.168.56.91:3000` or `http://192.168.56.92:3000`.  Notice datasource is still persistent.
